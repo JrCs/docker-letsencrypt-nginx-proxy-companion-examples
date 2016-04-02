@@ -32,8 +32,6 @@ letsencrypt-nginx-proxy-companion:
 simple-site:
   image: nginx
   container_name: simple-site
-  ports:
-      - "8080:80"
   volumes:
     - "../../../volumes/examples/simple-site/conf.d/:/etc/nginx/conf.d"
   environment:
